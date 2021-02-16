@@ -1,0 +1,121 @@
+/*Header Style:
+
+Fixes Poition when resizing
+
+*/
+.header{
+    display: flex;
+}
+/*
+Body Style
+
+-inserts image and a transparent gradient
+-stretches and centers background image
+*/
+body {
+    background-image:  linear-gradient(to right, rgba(255,0,0,0), rgb(241, 150, 64)),url("https://i.pinimg.com/originals/72/73/95/727395f9ae08ca85b300b683568bbc5f.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*
+The below part:
+Creates rainbow text
+resizes text to window size
+*/
+h1 {
+    font-size:72px;
+    text-align:center;
+    display:inline-block;
+    position:relative;
+    width:100%;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, orange, red);   
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/*
+The below part:
+puts two divs together in the same row
+and centers content
+*/
+.sideBySide{
+    display: grid;
+    grid-template-columns: 100px 100px; 
+    grid-template-rows: 100px;
+    grid-column-gap: 200px;
+    justify-content: center;
+}
+
+/*
+The below part:
+sets font for heading style 2
+*/
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*
+The below part:
+sets position of the notes
+and width
+*/
+.Notes {
+    float:left;
+    width: 50%;
+}
+/*
+The below part:
+helps with creating rows
+*/
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*
+The below part:
+creates the generic button layout
+*/
+.button{
+    border: none;
+    color: aliceblue;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+     
+}
+/*
+The below part:
+sets the buttons background
+font color
+and border
+*/
+.button1 {
+    background-color: aliceblue; 
+    color: black; 
+    border: 2px solid rgb(241, 150, 64);
+}
+ /*
+ The below part:
+ creates the effect of hovering effect when cursor is over
+ */
+.button1:hover {
+    background-color: rgb(241, 150, 64);
+    color: white;
+}
+/*
+The below part:
+sets the bullet point style
+color and font size
+for a unordered list
+*/
+ul{
+    list-style-type: circle;
+    color: aliceblue;
+    font-size: medium;
+}

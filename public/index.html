@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<!-- This creates the Title of the webpage -->
+
+<head>
+    <title>Cheesecake Order Form</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
+    </script>
+</head>
+<!-- This is where the body text starts for the webpage -->
+
+<body>
+    <div class="header">
+        <h1>Cheesecake Order Form</h1> <!-- is the title on the webpage -->
+    </div>
+    <div class="sideBySide">
+        <div class="bulletPoints">
+            <h2>Quantities</h2>
+            <!-- The dropdown menu for quantities -->
+            <select id="quantities">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+            </select>
+
+        </div>
+
+        <div class="Toppings">
+            <h2>Toppings</h2>
+            <!-- This creates the selection for the different
+            types of toppings. You can only select one in the form. -->
+            <form id="toppingList">
+                <input type="radio" name="toppings" id="plain">
+                <label for="Plain">Plain</label><br>
+                <input type="radio" name="toppings" id="cherry">
+                <label for="Cherry">Cherry</label><br>
+                <input type="radio" name="toppings" id="chocolate">
+                <label for="Chocolate">Chocolate</label>
+            </form>
+        </div>
+    </div>
+    <!-- The notes section is created with a header, 
+        a textbox, a button
+     -->
+    <div class="row">
+        <div class="Notes">
+            <h2>Notes</h2>
+            <textarea id="noteSection" cols="40" rows="5" placeholder="Enter Any Special Instructions Here."></textarea>
+            <button class="button button1" onclick="orderCakeScript()">Order</button>
+        </div>
+    </div>
+    <!-- This section describes the total orders 
+        and the inividual orders in a list -->
+    <div class="sideBySide">
+
+        <h2>Orders for</h2>
+
+        <select id="months">
+            
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="July">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sept">Sept</option>
+            <option value="Oct">Oct</option>
+            <option value="Nov">Nov</option>
+            <option value="Dec">Dec</option>
+        </select>
+
+    </div>
+    <ul>
+        <li>11 Cherry</li>
+        <li>17 Chocolate</li>
+        <li>31 Plain</li>
+    </ul>
+    </div>
+    <script src="javascripts/functions.js"></script>
+    
+</body>
+
+</html>
