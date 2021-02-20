@@ -20,12 +20,45 @@ function orderCakeScript() {
     }
     //clear sections
 }
-//script that handles the displaying of the different months
-$("#months").mouseenter(function () {
-    $(this)[0].size = $(this).find("option").length;
+
+$("#Jan").on("click", function () {
+    $("#first").html("Jan");
 });
 
-//script that clicks the individual month
-$("#months").click(function () {
-    $(this)[0].size =0;
+$("#Feb").on("click", function () {
+    $("#first").html("Feb");
 });
+$("#Mar").on("click", function () {
+    $("#first").html("Mar");
+});
+$("#Apr").on("click", function () {
+    $("#first").html("Apr");
+});
+
+$("#May").on("click", function () {
+    $("#first").html("May");
+});
+$("#Jun").on("click", function () {
+    $("#first").html("Jun");
+});
+$("#MJuly").on("click", function () {
+    $("#first").html("July");
+});
+
+$("#Aug").on("click", function () {
+    $("#first").html("Aug");
+});
+$("#Sep").on("click", function () {
+    $("#first").html("Sep");
+});
+$("#Oct").on("click", function () {
+    $("#first").html("Oct");
+});
+
+$("#Nov").on("click", function () {
+    $("#first").html("Nov");
+});
+$("#Dec").on("click", function () {
+    $("#first").html("Dec");
+});
+

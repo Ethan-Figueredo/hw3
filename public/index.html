@@ -5,12 +5,15 @@
 <head>
     <title>Cheesecake Order Form</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" />
-    </script>
 </head>
 <!-- This is where the body text starts for the webpage -->
 
 <body>
+    <script>
+        $("#Mar").on("click", function () {
+            $("#first").html("Mar");
+        });
+    </script>
     <div class="header">
         <h1>Cheesecake Order Form</h1> <!-- is the title on the webpage -->
     </div>
@@ -56,23 +59,25 @@
     <div class="sideBySide">
 
         <h2>Orders for</h2>
-
-        <select id="months">
-            
-            <option value="Jan">Jan</option>
-            <option value="Feb">Feb</option>
-            <option value="Mar">Mar</option>
-            <option value="Apr">Apr</option>
-            <option value="May">May</option>
-            <option value="Jun">Jun</option>
-            <option value="July">Jul</option>
-            <option value="Aug">Aug</option>
-            <option value="Sept">Sept</option>
-            <option value="Oct">Oct</option>
-            <option value="Nov">Nov</option>
-            <option value="Dec">Dec</option>
-        </select>
-
+        <div class="right-menu">
+            <button id="first" class="menu-button">Jan</button>
+            <div class="dropdown-menu">
+                
+                    <a id="Jan" href="#">Jan</a>
+                    <a id="Feb" href="#">Feb</a>
+                    <a id="Mar" href="#">Mar</a>
+                    <a id="Apr" href="#">Apr</a>
+                    <a id="May" href="#">May</a>
+                    <a id="Jun" href="#">Jun</a>
+                    <a id="Jul" href="#">Jul</a>
+                    <a id="Aug" href="#">Aug</a>
+                    <a id="Sep" href="#">Sep</a>
+                    <a id="Oct" href="#">Oct</a>
+                    <a id="Nov" href="#">Nov</a>
+                    <a id="Dec" href="#">Dec</a>
+                
+            </div>
+        </div>
     </div>
     <ul>
         <li>11 Cherry</li>
@@ -80,8 +85,10 @@
         <li>31 Plain</li>
     </ul>
     </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="javascripts/functions.js"></script>
-    
 </body>
 
 </html>
