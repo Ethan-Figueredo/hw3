@@ -9,11 +9,6 @@
 <!-- This is where the body text starts for the webpage -->
 
 <body>
-    <script>
-        $("#Mar").on("click", function () {
-            $("#first").html("Mar");
-        });
-    </script>
     <div class="header">
         <h1>Cheesecake Order Form</h1> <!-- is the title on the webpage -->
     </div>
@@ -21,13 +16,15 @@
         <div class="bulletPoints">
             <h2>Quantities</h2>
             <!-- The dropdown menu for quantities -->
+            <form name="quantities">
             <select id="quantities">
-                <option value="one">1</option>
-                <option value="two">2</option>
-                <option value="three">3</option>
-                <option value="four">4</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
             </select>
-
+            </form>
+            
         </div>
 
         <div class="Toppings">
@@ -35,12 +32,12 @@
             <!-- This creates the selection for the different
             types of toppings. You can only select one in the form. -->
             <form id="toppingList">
-                <input type="radio" name="toppings" id="plain">
-                <label for="Plain">Plain</label><br>
-                <input type="radio" name="toppings" id="cherry">
-                <label for="Cherry">Cherry</label><br>
-                <input type="radio" name="toppings" id="chocolate">
-                <label for="Chocolate">Chocolate</label>
+                <label><input type="radio" name="toppings" value="Plain" id="plain">Plain</label><br>
+                
+                <label><input type="radio" name="toppings" value="Cherry" id="cherry">Cherry</label><br>
+                
+                <label><input type="radio" name="toppings" value="Chocolate" id="chocolate">Chocolate</label>
+                
             </form>
         </div>
     </div>
@@ -62,7 +59,7 @@
         <div class="right-menu">
             <button id="first" class="menu-button">Jan</button>
             <div class="dropdown-menu">
-                
+                <div class="vertical-menu">
                     <a id="Jan" href="#">Jan</a>
                     <a id="Feb" href="#">Feb</a>
                     <a id="Mar" href="#">Mar</a>
@@ -75,20 +72,20 @@
                     <a id="Oct" href="#">Oct</a>
                     <a id="Nov" href="#">Nov</a>
                     <a id="Dec" href="#">Dec</a>
-                
+                </div>
             </div>
         </div>
     </div>
     <ul>
-        <li>11 Cherry</li>
-        <li>17 Chocolate</li>
-        <li>31 Plain</li>
+        <li id="cherryList">11 Cherry</li>
+        <li id="chocolateList">17 Chocolate</li>
+        <li id="plainList">31 Plain</li>
     </ul>
     </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="javascripts/functions.js"></script>
+<script src="javascripts/functions.js"></script>
 </body>
 
 </html>
